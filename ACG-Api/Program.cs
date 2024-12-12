@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ACG_Api.Database;
+using ACG_Class.Database;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +32,14 @@ builder.Services.AddDbContext<DataBaseArchive>(options =>
 builder.Services.AddDbContext<DataBaseUser>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("UserConnection"));
+    options.UseLoggerFactory(LoggerFactory.Create(builder => builder
+        .AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Warning)
+        .AddFilter("Microsoft.EntityFrameworkCore", LogLevel.Warning)));
+});
+
+builder.Services.AddDbContext<MemoryDb>(options =>
+{
+    options.UseInMemoryDatabase("InMemoryDb");
     options.UseLoggerFactory(LoggerFactory.Create(builder => builder
         .AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Warning)
         .AddFilter("Microsoft.EntityFrameworkCore", LogLevel.Warning)));

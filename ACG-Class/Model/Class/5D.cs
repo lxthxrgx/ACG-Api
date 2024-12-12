@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Hosting;
-
-namespace ACG_Api.Model.Class
+﻿namespace ACG_Class.Model.Class
 {
     public class _5D
     {

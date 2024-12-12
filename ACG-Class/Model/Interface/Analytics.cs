@@ -1,4 +1,4 @@
-﻿namespace ACG_Api.Model.Interface
+﻿namespace ACG_Class.Model.Interface
 {
     public interface Analytics
     {

@@ -1,4 +1,4 @@
-﻿    namespace ACG_Api.Model.Class
+﻿namespace ACG_Class.Model.Class
 {
     public class _4D
     {

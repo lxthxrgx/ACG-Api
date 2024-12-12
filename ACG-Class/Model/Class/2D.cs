@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ACG_Api.Model.Class
+namespace ACG_Class.Model.Class
 {
     public class _2D
     {

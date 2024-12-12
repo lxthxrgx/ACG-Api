@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ACG_Api.Model.Class;
-namespace ACG_Api.Database
+using ACG_Class.Model.Class;
+
+namespace ACG_Class.Database
 {
     public class DataBaseContext : DbContext
     {
