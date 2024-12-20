@@ -22,4 +22,8 @@
     <ProjectReference Include="..\ACG-Class\ACG-Class.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\MemoryDb\" />
+  </ItemGroup>
+
 </Project>

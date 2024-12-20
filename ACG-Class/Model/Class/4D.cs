@@ -15,7 +15,7 @@
 
         public ICollection<PdfFilePath_Sublease> PathToPdfFiles_Sublease { get; } = new List<PdfFilePath_Sublease>();
 
-        public bool? Done { get; set; }
+        public bool? Done { get; } = false;
 
     }
 
@@ -27,4 +27,5 @@
         public string? PathToPdfFile_Sublease { get; set; }
 
     }
+
 }
